@@ -64,15 +64,6 @@ void configModeCallback (WiFiManager *myWiFiManager) {
   ticker.attach(0.2, tick);
 }
 
-
-// monitor serial
-// pio device monitor -b 115200 -p /dev/cu.usbserial-14310
-
-// clear the esp
-// esptool.py --chip esp8266 --port /dev/cu.usbserial-14310 erase_flash
-
-// upload
-// pio run --target upload
 void setup() {
   //pio device monitor -b 115200 -p 4
   Serial.begin(115200);
